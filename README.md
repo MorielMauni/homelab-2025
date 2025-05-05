@@ -1,9 +1,9 @@
-# Upgrading my homelab
+# Upgrading my homelab 2025
 
 For now, my homelab is only a NextCloud server.
 I want to upgrade it and train on my Kubernetes skills.
 
-Homelab Tech slack: (gets update)
+# Homelab Tech slack: (gets update)
 1. Asus rog laptop
 2. NextCloud server
    - hosted on ports 80/443 with duckdns (for now)
