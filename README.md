@@ -15,4 +15,4 @@ I want to upgrade it and train on my Kubernetes skills.
 5. DevPod:
    - working on DevPos containers to isolate working enviroments
 6. Flux:
-   - 
+   - CD of Kubenetes
