@@ -16,3 +16,6 @@ I want to upgrade it and train on my Kubernetes skills.
    - working on DevPos containers to isolate working enviroments
 6. Flux:
    - CD of Kubenetes
+7. Host: CloudFlare
+   - morielclouds.com
+   - Used CloudFlared to host the pods to the internet
