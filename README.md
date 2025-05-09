@@ -24,5 +24,5 @@ I want to upgrade it, and train on my Kubernetes skills.
    - Cloudflare tunnel
    - linkding enviorment for SU
 
-Apps:
+# Apps:
 1. Linkding: Bookmark manager
