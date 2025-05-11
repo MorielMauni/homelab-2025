@@ -38,7 +38,7 @@ spec:
         nginx.ingress.kubernetes.io/rewrite-target: /
 
       hosts:
-        - grafana.localhost  # Change this to your actual domain or local host
+        - monitor.morielclouds.com
   
       path: /
   
