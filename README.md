@@ -28,4 +28,4 @@ I want to upgrade it, and train on my Kubernetes skills.
 # *Apps*
 1. **Linkding**: Bookmark manager
 2. **Prometheus**: Monitor app -> hosted localy with ngnix-ingress
-3. **Renovate**: Version control
+3. **Renovate**: Auto version control: detects upgraded version, updates the YAMLs and make a pull request.
