@@ -9,7 +9,7 @@ I want to upgrade it, and train on my Kubernetes skills.
       - i7-6700HQ, GTX 965M, 32G RAM (Used to be a gaming laptop)
    - Runs: Ubuntu Server 22.04.5 LTS
 3. **NextCloud server**:
-   - hosted on ports 80/443 with DuckDNS (for now)
+   - ~~hosted on ports 80/443 with DuckDNS (for now)~~ Hosted with CloudFlare
    - maintaind and updated
 4. **k3s**:
    - manage pods, clusters and nodes
@@ -27,4 +27,6 @@ I want to upgrade it, and train on my Kubernetes skills.
 
 # *Apps*
 1. **Linkding**: Bookmark manager
-2. **Prometheus**: Monitor app -> Hosted with ngnix-ingress
+2. **Prometheus**: Monitor app -> hosted localy with ngnix-ingress
+      ![Prometheus](https://imgur.com/a/2cn7Npv)
+
