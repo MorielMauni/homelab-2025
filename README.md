@@ -13,6 +13,7 @@ I want to upgrade it, and train on my Kubernetes skills.
    - maintaind and updated
 4. **k3s**:
    - manage pods, clusters and nodes
+   - nginx ingress: because i'm using ports 443/80 for NextCloud I switched from Traefik ingress to ngnix on another ports.
 5. **DevPod**:
    - working on DevPos containers to isolate working enviroments
 6. **Flux**:
@@ -26,3 +27,4 @@ I want to upgrade it, and train on my Kubernetes skills.
 
 # *Apps*
 1. **Linkding**: Bookmark manager
+2. **Prometheus**: Monitor app -> Hosted with ngnix-ingress
