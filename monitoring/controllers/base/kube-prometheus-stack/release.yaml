@@ -35,19 +35,7 @@ spec:
         hosts:
           - monitor.morielclouds.com
 
-        tls: []
-      # - secretName: grafana-general-tls
-      #   hosts:
-      #   - grafana.example.com
-
-    # # To make Grafana persistent (Using Statefulset)
-    # #
-    # persistence:
-    #   enabled: true
-    #   type: sts
-    #   storageClassName: "storageClassName"
-    #   accessModes:
-    #     - ReadWriteOnce
-    #   size: 20Gi
-    #   finalizers:
-    #     - kubernetes.io/pvc-protection
+        tls:
+          - secretName: grafana-tls-secret
+            hosts:
+              - monitor.morielclouds.com
