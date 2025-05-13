@@ -12,7 +12,7 @@ spec:
     metadata:
       labels:
         app: audiobookshelf
-    # spec:
+    spec:
     #   securityContext:
     #     fsGroup: 33 # www-data group ID
     #     runAsUser: 33 # www-data user ID
