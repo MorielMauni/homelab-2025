@@ -34,10 +34,10 @@ spec:
           # securityContext:
           #   allowPrivilegeEscalation: false
 
-          volumeMounts:
-            - name: audiobookshelf-data
-              mountPath: /etc/audiobookshelf/data
-      volumes:
-        - name: audiobookshelf-data
-          persistentVolumeClaim:
-            claimName: audiobookshelf-data-pvc
+      #     volumeMounts:
+      #       - name: audiobookshelf-data
+      #         mountPath: /etc/audiobookshelf/data
+      # volumes:
+      #   - name: audiobookshelf-data
+      #     persistentVolumeClaim:
+      #       claimName: audiobookshelf-data-pvc
