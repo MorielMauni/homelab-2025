@@ -7,19 +7,17 @@ spec:
   selector:
     app: pihole
   ports:
-    - name: dns-udp
-      port: 53
-      targetPort: 53
-      protocol: UDP
     - name: dns-tcp
       port: 53
-      targetPort: 53
       protocol: TCP
+    - name: dns-udp
+      port: 53
+      protocol: UDP
     - name: http
-      port: 5080         # External port
-      targetPort: 80     # Internal container port
+      port: 8053        # Changed from 80
+      targetPort: 80    # Pi-hole container still uses 80 internally
       protocol: TCP
     - name: https
-      port: 5443         # External port
-      targetPort: 443
+      port: 8443       # Changed from 443
+      targetPort: 443  # Pi-hole container still uses 443 internally
       protocol: TCP
