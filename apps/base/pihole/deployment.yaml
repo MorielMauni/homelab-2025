@@ -14,7 +14,6 @@ spec:
     metadata:
       labels:
         app: pihole
-
     spec:
       containers:
         - name: pihole
@@ -28,7 +27,6 @@ spec:
               protocol: TCP
             - containerPort: 443
               protocol: TCP
-
           env:
             - name: TZ
               value: "Asia/Jerusalem"
@@ -36,24 +34,19 @@ spec:
               value: "all"
             - name: FTLCONF_misc_etc_dnsmasq_d
               value: "true"
-
-          # envFrom:
-          #   - configMapRef:
-          #       name: pihole-configmap
-
           volumeMounts:
             - name: pihole-mount
               mountPath: /etc/pihole
+          securityContext:
+            capabilities:
+              add:
+                - NET_ADMIN
+                - CHOWN
 
       volumes:
         - name: pihole-mount
           persistentVolumeClaim:
             claimName: pihole-pvc
-
-      securityContext:
-        fsGroup: 1000
-        runAsUser: 1000
-        runAsGroup: 1000
 
       dnsPolicy: ClusterFirst
       restartPolicy: Always
