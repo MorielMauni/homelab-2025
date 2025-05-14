@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: homepage-configmap
 data:
-  HOMEPAGE_ALLOWED_HOSTS: "*"
-  # HOMEPAGE_BASE_URL: "http://homepage.morielclouds.com:31080"
+  HOMEPAGE_ALLOWED_HOSTS: homepage.morielclouds.com:31080
+  HOMEPAGE_BASE_URL: "http://homepage.morielclouds.com:31080"
   PUID: "1000"
   PGID: "1000"
