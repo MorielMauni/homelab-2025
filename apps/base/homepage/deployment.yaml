@@ -21,14 +21,15 @@ spec:
           env:
             - name: HOMEPAGE_ALLOWED_HOSTS
               valueFrom:
-                configMapRef:
+                configMapKeyRef:
                   name: homepage-configmap
                   key: HOMEPAGE_ALLOWED_HOSTS
             - name: HOMEPAGE_BASE_URL
               valueFrom:
-                configMapRef:
+                configMapKeyRef:
                   name: homepage-configmap
                   key: HOMEPAGE_BASE_URL
+
 
 
           ports:
