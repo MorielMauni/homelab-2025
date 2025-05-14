@@ -23,7 +23,7 @@ spec:
       containers:
         - name: pihole
 
-          image: pihole/pihole:2025.04.0
+          image: pihole/pihole:latest
 
           envFrom:
             - configMapRef:
@@ -31,14 +31,12 @@ spec:
 
           ports:
               - containerPort: 53
-                protocol: UDP
-              - containerPort: 53
                 protocol: TCP
+              - containerPort: 53
+                protocol: UDP
               - containerPort: 80
-                name: http
                 protocol: TCP
               - containerPort: 443
-                name: https
                 protocol: TCP
 
           volumeMounts:

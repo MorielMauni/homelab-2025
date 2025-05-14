@@ -6,6 +6,10 @@ spec:
   selector:
     app: pihole
   ports:
+    - name: web
+      port: 8053
+      targetPort: 80
+      protocol: TCP
     - name: dns-tcp
       port: 53
       targetPort: 53
@@ -14,12 +18,4 @@ spec:
       port: 53
       targetPort: 53
       protocol: UDP
-    - name: web
-      port: 8053
-      targetPort: 80 
-      protocol: TCP
-    - name: https
-      port: 8443
-      targetPort: 443
-      protocol: TCP
   type: ClusterIP
