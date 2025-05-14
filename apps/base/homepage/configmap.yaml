@@ -4,5 +4,5 @@ metadata:
   name: homepage-configmap
 data:
   HOMEPAGE_ALLOWED_HOSTS: homepage.morielclouds.com
-  PUID: 1000
-  PGID: 1000
+  PUID: "1000"
+  PGID: "1000"
