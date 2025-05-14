@@ -37,9 +37,9 @@ spec:
             - name: FTLCONF_misc_etc_dnsmasq_d
               value: "true"
 
-          envFrom:
-            - configMapRef:
-                name: pihole-configmap
+          # envFrom:
+          #   - configMapRef:
+          #       name: pihole-configmap
 
           volumeMounts:
             - name: pihole-mount
