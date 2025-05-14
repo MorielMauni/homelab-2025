@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pihole
+  labels:
+    app: pihole
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pihole
+  template:
+    metadata:
+      labels:
+        app: pihole
+
+    spec:
+      containers:
+        - name: pihole
+          image: pihole/pihole:2025.04.0
+          ports:
+            - containerPort: 53
+              protocol: TCP
+            - containerPort: 53
+              protocol: UDP
+            - containerPort: 80
+              protocol: TCP
+            - containerPort: 443
+              protocol: TCP
+
+          env:
+            - name: TZ
+              value: "Asia/Jerusalem"
+            - name: FTLCONF_dns_listeningMode
+              value: "all"
+            - name: FTLCONF_misc_etc_dnsmasq_d
+              value: "true"
+
+          envFrom:
+            - configMapRef:
+                name: pihole-configmap
+
+          volumeMounts:
+            - name: pihole-mount
+              mountPath: /etc/pihole
+
+      volumes:
+        - name: pihole-mount
+          persistentVolumeClaim:
+            claimName: pihole-pvc
+
+      securityContext:
+        fsGroup: 1000
+        runAsUser: 1000
+        runAsGroup: 1000
+
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
