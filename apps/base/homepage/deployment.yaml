@@ -20,10 +20,16 @@ spec:
 
           env:
             - name: HOMEPAGE_ALLOWED_HOSTS
-              valueForm:
-               configMapRef:
+              valueFrom:
+                configMapRef:
                   name: homepage-configmap
                   key: HOMEPAGE_ALLOWED_HOSTS
+            - name: HOMEPAGE_BASE_URL
+              valueFrom:
+                configMapRef:
+                  name: homepage-configmap
+                  key: HOMEPAGE_BASE_URL
+
 
           ports:
             - containerPort: 3000

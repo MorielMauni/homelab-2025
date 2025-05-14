@@ -29,3 +29,6 @@ I want to upgrade it, and train on my Kubernetes skills.
 1. **Linkding**: Bookmark manager
 2. **Prometheus**: Monitor app -> hosted localy with ngnix-ingress
 3. **Renovate**: Auto version control: detects upgraded version, updates the YAMLs and make a pull request.
+4. **AudioBookShelf**: added for fun, it's tunred off for now
+5. **Pi-Hole**: Self hosted DNS server -> hosted localy with ngnix-ingress
+6. **Homepage**: To see all the homelabs pods and info -> hosted localy with ngnix-ingress
