@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: homepage-configmap
+data:
+  HOMEPAGE_ALLOWED_HOSTS: homepage.morielclouds.com
+  PUID: 1000
+  PGID: 1000
