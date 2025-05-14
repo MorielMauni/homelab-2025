@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: pihole-configmap
-data:
-  VIRTUAL_HOST: "pihole.morielclouds.com"
-  WEBPASSWORD: "8hGLb_e0"  # Use the generated password
-  ServerIP: "10.43.94.9"
-  PIHOLE_DNS_: "1.1.1.1;8.8.8.8"

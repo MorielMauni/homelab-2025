@@ -1,3 +1,0 @@
-ingress:
-  - hostname: pihole.morielclouds.com
-    service: http://pihole-service.pihole:8053
