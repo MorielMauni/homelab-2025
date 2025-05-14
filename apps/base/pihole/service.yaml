@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: pihole-service
 spec:
-  type: ClusterIP
   selector:
     app: pihole
   ports:
@@ -14,10 +13,11 @@ spec:
       port: 53
       protocol: UDP
     - name: http
-      port: 8053        # Changed from 80
-      targetPort: 80    # Pi-hole container still uses 80 internally
+      port: 8053
+      targetPort: 80
       protocol: TCP
     - name: https
-      port: 8443       # Changed from 443
-      targetPort: 443  # Pi-hole container still uses 443 internally
+      port: 8443
+      targetPort: 443
       protocol: TCP
+  type: ClusterIP
