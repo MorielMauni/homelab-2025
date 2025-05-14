@@ -4,5 +4,6 @@ metadata:
   name: pihole-configmap
 data:
   VIRTUAL_HOST: "pihole.morielclouds.com"
-  WEBPASSWORD: "admin"  # Consider using a secret for passwords
+  WEBPASSWORD: "8hGLb_e0"  # Use the generated password
   ServerIP: "10.43.94.9"
+  PIHOLE_DNS_: "1.1.1.1;8.8.8.8"
