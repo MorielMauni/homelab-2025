@@ -1,9 +1,8 @@
 .envrc
 kubeconfig
-2c54bef3-3c1e-4e6f-9c56-41a7b1a6c018.json
+.json/
 age.agekey
 value.yaml
 tls.crt
 tls.key
 .swp
-a1801100-9fa1-4f0b-8953-3b4e35e669fc.json
