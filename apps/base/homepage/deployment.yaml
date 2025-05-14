@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: homepage
-          image: ghcr.io/gethomepage/homepage:v0.8.11
+          image: ghcr.io/gethomepage/homepage:v1.2.0
 
           env:
             - name: HOMEPAGE_ALLOWED_HOSTS
