@@ -57,8 +57,8 @@ data:
     no-autoupdate: true
 
     ingress:
-      - hostname: pass.morielclouds.com
-        service: http://pass:80
+      - hostname: vault.morielclouds.com
+        service: http://vault:80
       - hostname: hello.example.com
         service: hello_world
       - service: http_status:404
