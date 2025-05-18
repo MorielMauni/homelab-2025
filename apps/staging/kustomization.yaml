@@ -5,4 +5,4 @@ resources:
   # - audiobookshelf
   # - pihole
   # - homepage
-  # - vaultwarden
+  - vaultwarden
