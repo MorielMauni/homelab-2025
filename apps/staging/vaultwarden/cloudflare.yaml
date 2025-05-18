@@ -58,7 +58,7 @@ data:
 
     ingress:
       - hostname: vault.morielclouds.com
-        service: http://vaultwarden.vaultwarden.svc.cluster.local:8081
+        service: http://vaultwarden:8081
       - hostname: hello.example.com
         service: hello_world
       - service: http_status:404
