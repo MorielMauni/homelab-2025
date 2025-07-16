@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: notset.alexandrud.com
+    - host: uptimekuma.morielclouds.com
       http:
         paths:
           - backend:
