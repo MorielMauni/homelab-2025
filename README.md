@@ -32,3 +32,4 @@ I want to upgrade it, and train on my Kubernetes skills.
 4. **AudioBookShelf**: added for fun, it's tunred off for now
 5. **Pi-Hole**: Self hosted DNS server -> hosted localy with ngnix-ingress
 6. **Homepage**: To see all the homelabs pods and info -> hosted localy with ngnix-ingress
+7. **UptimeKuma**: Monitor up time of my self hosted apps.
